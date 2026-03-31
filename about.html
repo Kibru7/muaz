@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Netsanet Chora Primary And Middle School.</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fonts (Inter via Bunny.net) -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        school: {
+                            blue: '#2563EB',
+                            darkBlue: '#1E40AF',
+                            green: '#16A34A',
+                            light: '#F3F4F6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Mobile Menu Transition */
+        #mobile-menu {
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        #mobile-menu.open {
+            max-height: 400px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap text-3xl text-school-blue"></i>
+                        <span class="font-bold text-xl text-gray-900 hidden sm:block">Netsanet Chora</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-school-blue font-medium transition">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-school-blue font-medium transition">About</a>
+                    <a href="programs.html" class="text-gray-600 hover:text-school-blue font-medium transition">Programs</a>
+                    <a href="achievements.html" class="text-gray-600 hover:text-school-blue font-medium transition">Achievements</a>
+                    <a href="contact.html" class="bg-school-blue text-white px-5 py-2 rounded-full font-medium hover:bg-school-darkBlue transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-school-blue focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">About</a>
+                <a href="programs.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">Programs</a>
+                <a href="achievements.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">Achievements</a>
+                <a href="contact.html" class="block px-3 py-2 text-base font-medium text-school-blue font-bold hover:bg-gray-50 rounded-md">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-12 bg-gradient-to-r from-school-blue to-school-green text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold">About Us</h1>
+            <p class="text-lg text-blue-100 mt-2">Learn more about Netsanet Chora Primary And Middle School.</p>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-school-blue/10 rounded-full z-0"></div>
+                        <img src="exam hall.jpg" alt="Classroom" class="relative z-10 rounded-2xl shadow-2xl w-full object-cover h-[400px]">
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-school-green/10 rounded-full z-0"></div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-school-blue font-bold tracking-wide uppercase text-sm mb-2">About Our School</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Nurturing Minds in Nefas Selak Lafto</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Located in Nefas Selak Lafto Sub-city, Woreda 6, Addis Ababa, netsanet chora primary and middle school is a government institution recognized for its high performance since 2017.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We provide complete learning resources, extensive library services, and a comfortable learning environment designed to foster academic excellence and personal growth.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fa-solid fa-check-circle text-school-green mr-3"></i> Government Recognized High Performance School
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fa-solid fa-check-circle text-school-green mr-3"></i> Complete Learning Resources
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fa-solid fa-check-circle text-school-green mr-3"></i> Modern Library Services
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, Values -->
+    <section class="py-20 bg-school-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Core Identity</h2>
+                <div class="w-20 h-1 bg-school-blue mx-auto mt-4 rounded"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Mission -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-school-blue">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-bullseye text-2xl text-school-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Our Mission</h3>
+                    <p class="text-gray-600">To help students learn, grow, and succeed through dedicated teaching and supportive resources.</p>
+                </div>
+
+                <!-- Vision -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-school-green">
+                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-eye text-2xl text-school-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Our Vision</h3>
+                    <p class="text-gray-600">To develop responsible citizens with integrity, dignity, and a strong sense of responsibility.</p>
+                </div>
+
+                <!-- Values -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-yellow-500">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-heart text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Core Values</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fa-solid fa-star text-xs text-yellow-500 mr-2"></i>Respect</li>
+                        <li><i class="fa-solid fa-star text-xs text-yellow-500 mr-2"></i>Cooperation</li>
+                        <li><i class="fa-solid fa-star text-xs text-yellow-500 mr-2"></i>Discipline</li>
+                        <li><i class="fa-solid fa-star text-xs text-yellow-500 mr-2"></i>Safety</li>
+                        <li><i class="fa-solid fa-star text-xs text-yellow-500 mr-2"></i>Responsibility</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- School Environment -->
+    <section id="environment" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">School Environment</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-school-light p-6 rounded-lg shadow text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-shield-heart text-2xl text-school-green"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Safe & Supportive</h3>
+                    <p class="text-gray-600 text-sm">A secure learning environment where every child feels valued and protected.</p>
+                </div>
+                <div class="bg-school-light p-6 rounded-lg shadow text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-apple-whole text-2xl text-school-blue"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Nutrition Services</h3>
+                    <p class="text-gray-600 text-sm">Student nutrition programs to ensure healthy growth and concentration.</p>
+                </div>
+                <div class="bg-school-light p-6 rounded-lg shadow text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-book text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Complete Resources</h3>
+                    <p class="text-gray-600 text-sm">Fully stocked library and modern educational materials for all grades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-school-blue"></i>
+                        <span class="font-bold text-lg">Netsanet Chora</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Providing quality education for a better future in Addis Ababa.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="programs.html" class="hover:text-white transition">Programs</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Programs</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>Primary Education</li>
+                        <li>Middle Education</li>
+                        <li>Science & Technology</li>
+                        <li>Sports Activities</li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Netsanet Chora Primary And Middle School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('open');
+            });
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+                navbar.classList.add('bg-white/95');
+                navbar.classList.add('backdrop-blur-sm');
+            } else {
+                navbar.classList.remove('shadow-lg');
+                navbar.classList.remove('bg-white/95');
+                navbar.classList.remove('backdrop-blur-sm');
+            }
+        });
+    </script>
+</body>
+</html>

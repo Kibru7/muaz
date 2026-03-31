@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - Netsanet Chora Primary And Middle School.</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fonts (Inter via Bunny.net) -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        school: {
+                            blue: '#2563EB',
+                            darkBlue: '#1E40AF',
+                            green: '#16A34A',
+                            light: '#F3F4F6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Mobile Menu Transition */
+        #mobile-menu {
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        #mobile-menu.open {
+            max-height: 400px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap text-3xl text-school-blue"></i>
+                        <span class="font-bold text-xl text-gray-900 hidden sm:block">Netsanet Chora</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-school-blue font-medium transition">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-school-blue font-medium transition">About</a>
+                    <a href="programs.html" class="text-gray-600 hover:text-school-blue font-medium transition">Programs</a>
+                    <a href="achievements.html" class="text-gray-600 hover:text-school-blue font-medium transition">Achievements</a>
+                    <a href="contact.html" class="bg-school-blue text-white px-5 py-2 rounded-full font-medium hover:bg-school-darkBlue transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-school-blue focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">About</a>
+                <a href="programs.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">Programs</a>
+                <a href="achievements.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">Achievements</a>
+                <a href="contact.html" class="block px-3 py-2 text-base font-medium text-school-blue font-bold hover:bg-gray-50 rounded-md">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-12 bg-gradient-to-r from-school-blue to-school-green text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold">Our Achievements</h1>
+            <p class="text-lg text-blue-100 mt-2">Recognition and excellence in education</p>
+        </div>
+    </div>
+
+    <!-- Achievements -->
+    <section id="achievements" class="py-20 bg-school-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 bg-blue-600 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <i class="fa-solid fa-trophy text-6xl mb-6 text-yellow-400"></i>
+                    <h3 class="text-4xl font-bold mb-2">3rd Place</h3>
+                    <p class="text-blue-100 text-lg">Ranked among first-level schools in the city</p>
+                </div>
+                <div class="p-8 bg-blue-600 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <i class="fa-solid fa-award text-6xl mb-6 text-yellow-400"></i>
+                    <h3 class="text-4xl font-bold mb-2">2017</h3>
+                    <p class="text-blue-100 text-lg">Recognized for High Performance</p>
+                </div>
+                <div class="p-8 bg-blue-600 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <i class="fa-solid fa-chart-line text-6xl mb-6 text-yellow-400"></i>
+                    <h3 class="text-4xl font-bold mb-2">Excellent</h3>
+                    <p class="text-blue-100 text-lg">Results in monitoring and support programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Award Recognition Photo -->
+    <section id="award-photo" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <img src="prize.jpg" alt="School officer receiving a prize from the Education Ministry" class="w-full h-[420px] object-cover rounded-2xl shadow-xl">
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Official Recognition</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-4">
+                        This photo captures a proud moment when the school officer received an official prize from the Education Ministry.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        The award reflects our school community's commitment to quality education, discipline, and continuous improvement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discipline & Rules -->
+    <section id="discipline" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-50 rounded-2xl p-8 md:p-12 shadow-inner border border-gray-100">
+                <div class="text-center mb-10">
+                    <i class="fa-solid fa-scale-balanced text-4xl text-school-blue mb-4"></i>
+                    <h2 class="text-3xl font-bold text-gray-900">Discipline & Rules</h2>
+                    <p class="text-gray-600 mt-2">Guidelines for a harmonious school community</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-clock text-school-green mt-1 mr-3"></i>
+                        <p class="text-gray-700">Come to school on time every day.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-hands-holding-circle text-school-green mt-1 mr-3"></i>
+                        <p class="text-gray-700">Respect teachers and fellow students.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-list-check text-school-green mt-1 mr-3"></i>
+                        <p class="text-gray-700">Follow all school rules and regulations.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-book-open-reader text-school-green mt-1 mr-3"></i>
+                        <p class="text-gray-700">Learn quietly and attentively in class.</p>
+                    </div>
+                    <div class="flex items-start md:col-span-2">
+                        <i class="fa-solid fa-building-shield text-school-green mt-1 mr-3"></i>
+                        <p class="text-gray-700">Protect school property and keep our environment clean.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rights & Responsibilities -->
+    <section id="rights" class="py-20 bg-school-green text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Rights and Responsibilities</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
+                We are dedicated to preparing responsible citizens for the future by encouraging good behavior, cooperation, and mutual respect among all members of our school community.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-school-blue"></i>
+                        <span class="font-bold text-lg">Netsanet Chora</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Providing quality education for a better future in Addis Ababa.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="programs.html" class="hover:text-white transition">Programs</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Programs</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>Primary Education</li>
+                        <li>Middle Education</li>
+                        <li>Science & Technology</li>
+                        <li>Sports Activities</li>
+                    </ul>
+                </div>
+
+        
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Netsanet Chora Primary And Middle School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('open');
+            });
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+                navbar.classList.add('bg-white/95');
+                navbar.classList.add('backdrop-blur-sm');
+            } else {
+                navbar.classList.remove('shadow-lg');
+                navbar.classList.remove('bg-white/95');
+                navbar.classList.remove('backdrop-blur-sm');
+            }
+        });
+    </script>
+</body>
+</html>

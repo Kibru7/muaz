@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Netsanet Chora Primary And Middle School</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fonts (Inter via Bunny.net) -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        school: {
+                            blue: '#2563EB',
+                            darkBlue: '#1E40AF',
+                            green: '#16A34A',
+                            light: '#F3F4F6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Mobile Menu Transition */
+        #mobile-menu {
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        #mobile-menu.open {
+            max-height: 400px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap text-3xl text-school-blue"></i>
+                        <span class="font-bold text-xl text-gray-900 hidden sm:block">Netsanet Chora</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-school-blue font-medium transition">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-school-blue font-medium transition">About</a>
+                    <a href="programs.html" class="text-gray-600 hover:text-school-blue font-medium transition">Programs</a>
+                    <a href="achievements.html" class="text-gray-600 hover:text-school-blue font-medium transition">Achievements</a>
+                    <a href="contact.html" class="bg-school-blue text-white px-5 py-2 rounded-full font-medium hover:bg-school-darkBlue transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-school-blue focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">About</a>
+                <a href="programs.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">Programs</a>
+                <a href="achievements.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-school-blue hover:bg-gray-50 rounded-md">Achievements</a>
+                <a href="contact.html" class="block px-3 py-2 text-base font-medium text-school-blue font-bold hover:bg-gray-50 rounded-md">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-12 bg-gradient-to-r from-school-blue to-school-green text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold">Our Programs</h1>
+            <p class="text-lg text-blue-100 mt-2">Comprehensive curriculum for every student's success</p>
+        </div>
+    </div>
+
+    <!-- Educational Programs -->
+    <section id="programs" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Educational Programs</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Comprehensive curriculum designed to nurture every aspect of a child's development.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Primary -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer hover:shadow-lg transition">
+                    <img src="learning.jpg" alt="Primary Education" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div>
+                            <i class="fa-solid fa-book-open text-school-blue mb-2 text-2xl"></i>
+                            <h3 class="text-white text-xl font-bold">Primary Education</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer hover:shadow-lg transition">
+                    <img src="library.jpg" alt="Library" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div>
+                            <i class="fa-solid fa-graduation-cap text-school-blue mb-2 text-2xl"></i>
+                            <h3 class="text-white text-xl font-bold">Library</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Science -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer hover:shadow-lg transition">
+                    <img src="innovation.jpg" alt="Science and Tech" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div>
+                            <i class="fa-solid fa-flask text-school-blue mb-2 text-2xl"></i>
+                            <h3 class="text-white text-xl font-bold">Science & Tech</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer hover:shadow-lg transition">
+                    <img src="ict lab.jpg" alt="ICT Center" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div>
+                            <i class="fa-solid fa-futbol text-school-blue mb-2 text-2xl"></i>
+                            <h3 class="text-white text-xl font-bold">ICT Center</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program Details -->
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-school-light p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-book-open text-school-blue mr-3 text-3xl"></i>
+                        Primary Education
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our primary curriculum focuses on building strong foundational skills in literacy, numeracy, and critical thinking. We emphasize interactive learning with hands-on activities that engage students in the learning process.
+                    </p>
+                </div>
+
+                <div class="bg-school-light p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-graduation-cap text-school-green mr-3 text-3xl"></i>
+                        Library
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our library provides students with a calm space for reading, research, and independent learning. It supports academic growth with a wide range of books and study materials.
+                    </p>
+                </div>
+
+                <div class="bg-school-light p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-flask text-purple-600 mr-3 text-3xl"></i>
+                        Science & Technology
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our science program includes modern laboratory facilities where students conduct experiments and develop scientific inquiry skills. Technology integration enhances learning across all subjects.
+                    </p>
+                </div>
+
+                <div class="bg-school-light p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-futbol text-red-600 mr-3 text-3xl"></i>
+                        ICT Center
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our ICT Center equips students with digital literacy, computer skills, and practical technology experience that support learning across all subjects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-school-blue"></i>
+                        <span class="font-bold text-lg">Netsanet Chora</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Providing quality education for a better future in Addis Ababa.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="programs.html" class="hover:text-white transition">Programs</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Programs</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>Primary Education</li>
+                        <li>Library</li>
+                        <li>Science & Technology</li>
+                        <li>ICT Center</li>
+                    </ul>
+                </div>
+
+                 
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Netsanet Chora Primary And Middle School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('open');
+            });
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+                navbar.classList.add('bg-white/95');
+                navbar.classList.add('backdrop-blur-sm');
+            } else {
+                navbar.classList.remove('shadow-lg');
+                navbar.classList.remove('bg-white/95');
+                navbar.classList.remove('backdrop-blur-sm');
+            }
+        });
+    </script>
+</body>
+</html>
